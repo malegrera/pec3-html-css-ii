@@ -8,11 +8,7 @@
       <!-- LOGO -->
       <div>
         <a href="index.html" class="flex justify-center md:justify-start">
-          <img
-            src="assets/images/logo.svg"
-            alt="Logo Jornadas de Artesanía"
-            class="h-10 w-auto"
-          />
+          <img src="assets/images/logo.svg" alt="Logo Jornadas de Artesanía" class="h-10 w-auto" />
         </a>
       </div>
 
@@ -43,41 +39,33 @@
               Actividades y contacto
             </a>
           </li>
-
         </ul>
       </nav>
-
-      <!-- SOCIAL -->
       <div>
         <ul class="flex gap-5 justify-center md:justify-end text-lg">
 
-          <li>
-            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"
-               class="hover:text-primary transition">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-          </li>
+          <include src="./views/social-icon.html" locals='{
+      "url": "https://www.facebook.com",
+      "label": "Facebook",
+      "icon": "fa-brands fa-facebook"
+    }'>
+          </include>
 
-          <li>
-            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"
-               class="hover:text-primary transition">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://x.com" target="_blank" aria-label="X"
-               class="hover:text-primary transition">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-          </li>
-
+          <include src="./views/social-icon.html" locals='{
+      "url": "https://www.instagram.com",
+      "label": "Instagram",
+      "icon": "fa-brands fa-instagram"
+    }'>
+          </include>
+          <include src="./views/social-icon.html" locals='{
+      "url": "https://x.com",
+      "label": "X",
+      "icon": "fa-brands fa-x-twitter"
+    }'>
+          </include>
         </ul>
       </div>
-
     </div>
-
-    <!-- BOTTOM -->
     <div class="border-t border-white/20 mt-8 pt-4 text-center text-sm text-gray-300">
       <small>&copy; 2026 María del Pilar Alegre Ramos</small>
     </div>

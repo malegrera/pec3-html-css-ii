@@ -8,7 +8,7 @@
   <title>Jornadas de Artesanía | Información</title>
 </head>
 
-<body class="bg-primary-200 text-dark font-sans leading-relaxed">
+<body class="bg-primary-200 text-dark font-base leading-relaxed">
 
   <include src="./views/header.html"></include>
 
@@ -16,23 +16,20 @@
 
     <article class="space-y-8">
 
-      <header class="space-y-2 text-center">
-        <h1 class="text-3xl md:text-4xl font-heading text-primary">
+      <header class="space-y-2 border-b border-gray-300 pb-4">
+        <h1 class="text-3xl md:text-4xl font-heading text-dark tracking-[0.15em] font-semibold">
           La artesanía como futuro sostenible
         </h1>
-
         <p class="text-secondary">
           Jornadas de Artesanía · 2026
         </p>
       </header>
       <include src="./views/figure.html" locals='{
-    "src": "./assets/images/muralgarden.jpg",
-    "alt": "Proceso artesanal trabajando la cerámica",
-    "caption": "Conexión entre la naturaleza y la creación artesanal"
-  }'>
+      "src": "./assets/images/muralgarden.jpg",
+      "alt": "Proceso artesanal trabajando la cerámica",
+      "caption": "Conexión entre la naturaleza y la creación artesanal"
+       }'>
       </include>
-
-
       <p>
         Las Jornadas de Artesanía reúnen a profesionales de distintos ámbitos con el objetivo de preservar y poner en
         valor técnicas tradicionales vinculadas al trabajo manual y al entorno natural.
@@ -43,7 +40,7 @@
         provienen del entorno que nos rodea, estableciendo un vínculo sostenible entre creación y medio ambiente.
       </p>
 
-      <blockquote class="border-l-4 border-primary pl-4 italic text-secondary">
+      <blockquote class="border-l-4 border-primary bg-light/90 pt-4 pb-6 px-6 italic leading-relaxed text-dark">
         <p>
           La artesanía es el diálogo continuo entre el ser humano y la naturaleza.
         </p>
@@ -54,11 +51,9 @@
       </p>
 
       <section class="space-y-4">
-        <h2 class="text-2xl font-heading text-primary">
+        <h2 class="text-2xl font-heading text-dark">
           Actividades destacadas
         </h2>
-
-        <ul class="space-y-3">
 <ul class="space-y-3">
 
   <include src="./views/list-item.html"
@@ -82,8 +77,22 @@
     }'>
   </include>
 
-</ul>          
-        </ul>
+  <include src="./views/list-item.html"
+    locals='{
+      "icon": "fa-solid fa-gem",
+      "text": "Creación de bisutería y marroquinería artesanal"
+    }'>
+  </include>
+
+  <include src="./views/list-item.html"
+    locals='{
+      "icon": "fa-solid fa-music",
+      "text": "Zona de ocio y descanso con música en directo"
+    }'>
+  </include>
+
+</ul>
+        
       </section>
 
       <include src="./views/figure.html" locals='{
@@ -93,7 +102,7 @@
   }'>
       </include>
 
-      <section class="pt-6 border-t border-gray-200 text-sm text-gray-500">
+      <section class="pt-6 border-t border-gray-300 text-sm text-gray-500">
         <p>Última actualización: mayo 2026</p>
       </section>
 

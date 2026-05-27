@@ -1,9 +1,0 @@
-@layer components {
-  .card-img-wrapper {
-    @apply overflow-hidden;
-  }
-
-  .card-img {
-    @apply w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105;
-  }
-}

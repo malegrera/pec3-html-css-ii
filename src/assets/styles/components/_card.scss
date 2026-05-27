@@ -22,7 +22,15 @@
   .card-btn {
     @apply inline-flex items-center gap-2 bg-primary text-light px-4 py-2 rounded-md text-sm font-medium hover:bg-secondary transition-colors;
   }
+  .card-img-wrapper {
+    @apply overflow-hidden;
+  }
+
+  .card-img {
+    @apply w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105;
+  }
 }
+
 
 
 
