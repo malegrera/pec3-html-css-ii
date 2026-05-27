@@ -1,0 +1,29 @@
+@layer components {
+  .card {
+    @apply  bg-light rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300;
+  }
+
+  .card-body {
+    @apply p-5 space-y-3;
+  }
+
+  .card-title {
+    @apply text-xl font-heading text-primary;
+  }
+
+  .card-subtitle {
+    @apply text-sm text-secondary font-medium;
+  }
+
+  .card-text {
+    @apply text-dark text-sm leading-relaxed;
+  }
+
+  .card-btn {
+    @apply inline-flex items-center gap-2 bg-primary text-light px-4 py-2 rounded-md text-sm font-medium hover:bg-secondary transition-colors;
+  }
+}
+
+
+
+

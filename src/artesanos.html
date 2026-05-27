@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles/main.scss" />
+  <title>Artesanos | Jornadas de Artesanía</title>
+</head>
+
+<body class="bg-primary-200 text-dark font-sans">
+
+  <include src="./views/header.html"></include>
+
+  <main class="max-w-6xl mx-auto px-4 py-12">
+
+    <header class="text-center space-y-3 mb-12">
+      <h1
+        class="text-center mb-5 text-3xl md:text-4xl font-heading text-dark flex items-center justify-center gap-3">
+        <i class="fa-solid fa-users"></i>
+        Artesanos participantes
+      </h1>
+    </header>
+
+    <section class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+<include src="./views/artisan-card.html"
+  locals='{
+    "image": "./assets/images/akshat-jhingran-jGQAnZG5Nvg-unsplash.jpg",
+    "name": "María López",
+    "role": "Ceramista",
+    "description": "Especialista en cerámica tradicional con técnicas sostenibles."
+  }'>
+</include>
+      <article class="group card">
+
+        <div class="card-img-wrapper">
+          <img src="./assets/images/akshat-jhingran-jGQAnZG5Nvg-unsplash.jpg" alt="Artesano ceramista"
+            class="card-img" />
+        </div>
+
+        <div class="card-body">
+
+          <h2 class="card-title">María López</h2>
+
+          <p class="card-subtitle">Cerámica artesanal</p>
+
+          <p class="card-text">
+            Especialista en cerámica tradicional con técnicas manuales transmitidas durante generaciones.
+          </p>
+
+          <button class="card-btn">
+            <i class="fa-solid fa-arrow-right"></i>
+            Ver perfil
+          </button>
+
+        </div>
+      </article>
+
+      <article class="group card">
+
+        <div class="card-img-wrapper">
+          <img src="./assets/images/jorge-fernandez-salas-2gHEZzqUssw-unsplash.jpg" alt="Artesano joyero"
+            class="card-img" />
+        </div>
+
+        <div class="card-body">
+
+          <h2 class="card-title">Juan Pérez</h2>
+
+          <p class="card-subtitle">Joyería artesanal</p>
+
+          <p class="card-text">
+            Diseños únicos en metales nobles combinando técnicas modernas y tradicionales.
+          </p>
+
+          <button class="card-btn">
+            <i class="fa-solid fa-arrow-right"></i>
+            Ver perfil
+          </button>
+
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <include src="./views/footer.html"></include>
+
+</body>
+
+</html>

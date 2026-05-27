@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles/main.scss" />
+  <title>Jornadas de Artesanía | Información</title>
+</head>
+
+<body class="bg-primary-200 text-dark font-sans leading-relaxed">
+
+  <include src="./views/header.html"></include>
+
+  <main class="max-w-4xl mx-auto px-4 py-10">
+
+    <article class="space-y-8">
+
+      <header class="space-y-2 text-center">
+        <h1 class="text-3xl md:text-4xl font-heading text-primary">
+          La artesanía como futuro sostenible
+        </h1>
+
+        <p class="text-secondary">
+          Jornadas de Artesanía · 2026
+        </p>
+      </header>
+      <include src="./views/figure.html" locals='{
+    "src": "./assets/images/muralgarden.jpg",
+    "alt": "Proceso artesanal trabajando la cerámica",
+    "caption": "Conexión entre la naturaleza y la creación artesanal"
+  }'>
+      </include>
+
+
+      <p>
+        Las Jornadas de Artesanía reúnen a profesionales de distintos ámbitos con el objetivo de preservar y poner en
+        valor técnicas tradicionales vinculadas al trabajo manual y al entorno natural.
+      </p>
+
+      <p>
+        La artesanía mantiene una relación directa con la naturaleza: los materiales, los procesos y la inspiración
+        provienen del entorno que nos rodea, estableciendo un vínculo sostenible entre creación y medio ambiente.
+      </p>
+
+      <blockquote class="border-l-4 border-primary pl-4 italic text-secondary">
+        <p>
+          La artesanía es el diálogo continuo entre el ser humano y la naturaleza.
+        </p>
+      </blockquote>
+
+      <p>
+        Durante el evento se realizarán talleres, charlas y demostraciones en vivo.
+      </p>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl font-heading text-primary">
+          Actividades destacadas
+        </h2>
+
+        <ul class="space-y-3">
+<ul class="space-y-3">
+
+  <include src="./views/list-item.html"
+    locals='{
+      "icon": "fa-solid fa-dice-five",
+      "text": "Taller de creación de juegos de mesa artesanales"
+    }'>
+  </include>
+
+  <include src="./views/list-item.html"
+    locals='{
+      "icon": "fa-solid fa-map-pin",
+      "text": "Elaboración de chapas creativas personalizadas"
+    }'>
+  </include>
+
+  <include src="./views/list-item.html"
+    locals='{
+      "icon": "fa-solid fa-palette",
+      "text": "Pintura mural participativa"
+    }'>
+  </include>
+
+</ul>          
+        </ul>
+      </section>
+
+      <include src="./views/figure.html" locals='{
+    "src": "./assets/images/artesania2.jpg",
+    "alt": "Herramientas artesanales",
+    "caption": "Espacio de encuentros entre artesanos y asistentes"
+  }'>
+      </include>
+
+      <section class="pt-6 border-t border-gray-200 text-sm text-gray-500">
+        <p>Última actualización: mayo 2026</p>
+      </section>
+
+    </article>
+
+  </main>
+
+  <include src="./views/footer.html"></include>
+
+  <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+
+</html>

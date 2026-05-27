@@ -1,12 +1,17 @@
-@use "sass:color";
+@theme {
+  --color-primary: #c57b57;
+  --color-primary-200: #e3c4b3;
+  --color-secondary: #8b5e3c;
+  --color-accent: #d6a15f;
+  --color-dark: #1e1e1e;
+  --color-light: #f5f5f5;
 
-$font-family-sans-serif:
-  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
+  --color-success: #198754;
+  --color-danger: #dc3545;
+  --color-warning: #ffc107;
+  --color-info: #0dcaf0;
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
-
-$mqMinWidth: 420px;
+  
+  --font-sans: "Inder", sans-serif;
+  --font-heading: "Itim", cursive;
+}

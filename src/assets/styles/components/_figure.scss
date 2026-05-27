@@ -1,0 +1,15 @@
+@layer components {
+
+  .figure {
+    @apply space-y-2;
+  }
+
+  .figure-img {
+    @apply w-full h-auto rounded-lg;
+  }
+
+  .figure-caption {
+    @apply text-sm text-gray-500;
+  }
+
+}
