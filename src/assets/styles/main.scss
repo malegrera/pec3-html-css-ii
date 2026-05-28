@@ -14,6 +14,11 @@
 @use "variables";
 
 /**
+ * Import base styles
+ */
+@use "base";
+
+/**
  * Import components
  */
 @use "components/card";

@@ -20,67 +20,37 @@
         Artesanos participantes
       </h1>
     </header>
+         
 
-    <section class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+<section class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
-      <include src="./views/artisan-card.html" locals='{
-    "image": "./assets/images/akshat-jhingran-jGQAnZG5Nvg-unsplash.jpg",
-    "name": "María López",
-    "role": "Ceramista",
-    "description": "Especialista en cerámica tradicional con técnicas sostenibles."
-  }'>
-      </include>
-      <article class="group card">
+  <div>
+    <include src="./views/card.html" locals='{"image":"assets/images/2h-media-4g9NKX-46-8-unsplash.jpg","alt":"Gerardo Carrera con juegos de mesa artesanales","name":"Gerardo Carrera","role":"Ebanista","description":"Especialista en realizar juegos de mesa artesanales."}' />
+  </div>
 
-        <div class="card-img-wrapper">
-          <img src="./assets/images/akshat-jhingran-jGQAnZG5Nvg-unsplash.jpg" alt="Artesano ceramista"
-            class="card-img" />
-        </div>
+  <div>
+    <include src="./views/card.html" locals='{"image":"assets/images/akshat-jhingran-jGQAnZG5Nvg-unsplash.jpg","alt":"María Luisa Laredo trabajando tejido artesanal","name":"María Luisa Laredo","role":"Tejedora artesanal","description":"Diseña piezas textiles inspiradas en la tradición cultural."}' />
+  </div>
 
-        <div class="card-body">
+  <div>
+    <include src="./views/card.html" locals='{"image":"assets/images/jorge-fernandez-salas-2gHEZzqUssw-unsplash.jpg","alt":"Lucía Torres pintando mural colectivo","name":"Lucía Torres","role":"Pintora muralista","description":"Crea murales colectivos inspirados en la naturaleza."}' />
+  </div>
 
-          <h2 class="card-title">María López</h2>
+  <div>
+    <include src="./views/card.html" locals='{"image":"assets/images/kanishk-agarwal-aLDyUepkpkk-unsplash.jpg","alt":"Miguel Valverde creando composiciones colgantes","name":"Miguel Valverde","role":"Creador de composiciones colgantes","description":"Diseña piezas decorativas colgantes en madera y metal."}' />
+  </div>
 
-          <p class="card-subtitle">Cerámica artesanal</p>
+  <div>
+    <include src="./views/card.html" locals='{"image":"assets/images/sander-hallaste-2PiD0iW-oW8-unsplash.jpg","alt":"Montserrat Solá diseñando pines artesanales","name":"Montserrat Solá","role":"Creadora de pines artesanales","description":"Diseña pines inspirados en formas naturales y simbólicas."}' />
+  </div>
 
-          <p class="card-text">
-            Especialista en cerámica tradicional con técnicas manuales transmitidas durante generaciones.
-          </p>
+  <div>
+    <include src="./views/card.html" locals='{"image":"assets/images/sasha-matveeva-4TxzApubTe4-unsplash.jpg","alt":"Clara Campos pintando obra artística","name":"Clara Campos","role":"Pintora","description":"Crea obras pictóricas inspiradas en la vida cotidiana."}' />
+  </div>
 
-          <button class="card-btn">
-            <i class="fa-solid fa-arrow-right"></i>
-            Ver perfil
-          </button>
+</section>
 
-        </div>
-      </article>
 
-      <article class="group card">
-
-        <div class="card-img-wrapper">
-          <img src="./assets/images/jorge-fernandez-salas-2gHEZzqUssw-unsplash.jpg" alt="Artesano joyero"
-            class="card-img" />
-        </div>
-
-        <div class="card-body">
-
-          <h2 class="card-title">Juan Pérez</h2>
-
-          <p class="card-subtitle">Joyería artesanal</p>
-
-          <p class="card-text">
-            Diseños únicos en metales nobles combinando técnicas modernas y tradicionales.
-          </p>
-
-          <button class="card-btn">
-            <i class="fa-solid fa-arrow-right"></i>
-            Ver perfil
-          </button>
-
-        </div>
-      </article>
-
-    </section>
 
   </main>
 

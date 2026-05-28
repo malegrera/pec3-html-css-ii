@@ -1,61 +1,80 @@
 <header class="bg-primary text-light">
-  <nav class="max-w-6xl mx-auto px-4 py-4">
 
-    <div class="flex items-center justify-between gap-4">
+  <nav class="py-3">
 
-      <a href="index.html" class="flex items-center gap-3 min-w-0">
+    <div class="px-3 flex items-center justify-between">
+
+      <a
+        href="index.html"
+        class="flex items-center gap-2 min-w-0"
+      >
 
         <img
           src="./assets/images/logo.svg"
           alt="Logo Jornadas de Artesanía"
-          class="w-16 sm:w-20 md:w-24 h-auto"
+          class="h-5 sm:h-7 md:h-6 w-auto object-contain"
         />
 
-        <span class="font-base text-lg sm:text-xl md:text-2xl leading-tight">
+        <span class="text-base sm:text-lg md:text-xl font-bold leading-tight">
           Jornadas de Artesanía en la Naturaleza
         </span>
 
       </a>
 
       <button
-        id="menu-btn"
-        class="text-2xl md:hidden text-light focus:outline-none hover:scale-110 transition"
-        aria-label="Abrir menú"
+        type="button"
+        aria-label="Toggle navigation"
+        class="md:hidden text-2xl text-light border-0"
       >
         <i class="fa-solid fa-bars"></i>
       </button>
 
-      <ul
-        id="menu"
-        class="hidden md:flex md:items-center md:gap-6 ml-auto"
-      >
+      <div id="menu" class="hidden md:block">
 
-        <li>
-          <a href="index.html" class="hover:underline hover:opacity-90 transition">
-            Inicio
-          </a>
-        </li>
+        <ul class="flex gap-4 ml-auto">
 
-        <li>
-          <a href="artesanos.html" class="hover:underline hover:opacity-90 transition">
-            Artesanos
-          </a>
-        </li>
+          <li>
+            <a
+              href="index.html"
+              class="font-medium text-light hover:underline hover:opacity-90 transition"
+            >
+              Inicio
+            </a>
+          </li>
 
-        <li>
-          <a href="jornadas.html" class="hover:underline hover:opacity-90 transition">
-            Sobre las Jornadas
-          </a>
-        </li>
+          <li>
+            <a
+              href="artesanos.html"
+              class="font-medium text-light hover:underline hover:opacity-90 transition"
+            >
+              Artesanos
+            </a>
+          </li>
 
-        <li>
-          <a href="#" class="hover:underline hover:opacity-90 transition">
-            Actividades y contacto
-          </a>
-        </li>
+          <li>
+            <a
+              href="jornadas.html"
+              class="font-medium text-light hover:underline hover:opacity-90 transition"
+            >
+              Sobre las Jornadas
+            </a>
+          </li>
 
-      </ul>
+          <li>
+            <a
+              href="#"
+              class="font-medium text-light hover:underline hover:opacity-90 transition"
+            >
+              Actividades y contacto
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
 
     </div>
+
   </nav>
+
 </header>
