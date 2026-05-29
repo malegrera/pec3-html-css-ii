@@ -1,0 +1,18 @@
+@layer components {
+
+  .header-logo {
+    @apply flex items-center gap-2 min-w-0;
+  }
+
+  .header-title {
+    @apply text-base sm:text-lg md:text-xl font-bold leading-tight;
+  }
+
+  .header-toggle {
+    @apply md:hidden text-2xl text-light border-0;
+  }
+
+  .nav-link {
+    @apply font-medium text-light hover:underline hover:opacity-90 transition;
+  }
+}

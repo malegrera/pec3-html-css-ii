@@ -1,14 +1,13 @@
 @layer components {
   .card {
-    @apply h-full flex flex-col;
-    @apply bg-light rounded overflow-hidden shadow-md p-4;
+    @apply h-full flex flex-col bg-light rounded overflow-hidden shadow-md p-4;
     @apply transition-all duration-300;
     @apply hover:shadow-xl hover:-translate-y-2 hover:scale-[1.01];
   }
 
   .card-body {
     @apply flex flex-col flex-1;
-    @apply space-y-1 pt-2;
+    @apply space-y-1;
   }
 
   .card-title {
@@ -20,7 +19,7 @@
   }
 
   .card-text {
-    @apply text-dark leading-relaxed font-sans text-base;
+    @apply text-dark leading-relaxed text-base;
   }
 
   .card-btn {
