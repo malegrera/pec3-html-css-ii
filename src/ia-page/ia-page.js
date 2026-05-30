@@ -1,1 +1,1 @@
-import "./ia-page.css";
+import "./ia-page.scss";
