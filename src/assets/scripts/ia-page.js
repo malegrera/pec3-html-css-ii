@@ -1,0 +1,1 @@
+import "../styles/ia-page/ia-page.scss";
